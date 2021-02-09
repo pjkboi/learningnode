@@ -13,3 +13,9 @@ const ask = (i=0) => {
 };
 
 ask();
+
+
+process.stdin.on("data", data => {
+    process.stdout.write(`\n\n\n ${data.toString().trim()}`);
+    process.exit();
+});
